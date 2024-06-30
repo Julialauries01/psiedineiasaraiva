@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 // Elements
 import FeatureSection3 from "../elements/feature-section3";
-import TeamSection from "../elements/team";
 import LatestNewsSection from "../elements/latest-news-slider";
 
 // Import Images
@@ -164,7 +163,6 @@ class Services extends Component{
 					
 					<FeatureSection3 />
 					
-					<TeamSection />
 					
 					<LatestNewsSection />
 					

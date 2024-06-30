@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 // Import Images
 import aboutThumb1 from '../../images/about/pic-1.jpg';
-import aboutThumb2 from '../../images/about/pic-2.jpg';
+import aboutThumb2 from '../../images/about/pic-4.png';
 import aboutThumb3 from '../../images/about/pic-3.jpg';
 import ptImg1 from '../../images/shap/wave-orange.png';
 import ptImg2 from '../../images/shap/circle-small-blue.png';
@@ -23,15 +23,15 @@ class aboutSection extends Component{
 										<li><img className="about-thumb1" src={aboutThumb1} alt=""/></li>
 										<li><img className="about-thumb2" src={aboutThumb2} alt=""/></li>
 										<li><img className="about-thumb3" src={aboutThumb3} alt=""/></li>
-										<li><div className="exp-bx">20<span>Year Experience</span></div></li>
+										<li><div className="exp-bx">10<span>Certificações</span></div></li>
 									</ul>
 								</div>
 							</div>
 							<div className="col-lg-6 mb-30">
 								<div className="heading-bx">
-									<h6 className="title-ext text-secondary">About Us</h6>
-									<h2 className="title">The Great Place Of Medical Hospital Center</h2>
-									<p>We provide the special tips and advice’s of heath care treatment and high level of best technology involve in the our hospital.</p>
+									<h6 className="title-ext text-secondary">Sobre mim</h6>
+									<h2 className="title">Construindo resiliência juntos.</h2>
+									<p>Olá! Sou Edineia, psicóloga em Ribeirão Preto, oferecendo atendimento online e presencial. Com paixão por ajudar pessoas a encontrarem equilíbrio e bem-estar, minha jornada na psicologia começou com o profundo desejo de compreender o comportamento humano e suas complexas emoções. Possuo experiência em diversas áreas, como terapia cognitivo-comportamental, psicoterapia humanista e aconselhamento para casais e famílias. Acredito na importância de proporcionar um ambiente seguro e acolhedor, onde meus pacientes possam explorar seus pensamentos e sentimentos livremente, sem julgamentos.</p>
 								</div>
 								<div className="row">
 									<div className="col-lg-6 col-sm-6 mb-30 mb-sm-20">
@@ -48,7 +48,7 @@ class aboutSection extends Component{
 												</span> 
 											</div>
 											<div className="icon-content">
-												<h4 className="ttr-title">Emergency Help</h4>
+												<h4 className="ttr-title">Atendimento individual</h4>
 											</div>
 										</div>
 									</div>
@@ -64,7 +64,7 @@ class aboutSection extends Component{
 												</span> 
 											</div>
 											<div className="icon-content">
-												<h4 className="ttr-title">Qualified Doctors</h4>
+												<h4 className="ttr-title">Atendimento para casais</h4>
 											</div>
 										</div>
 									</div>
@@ -80,7 +80,7 @@ class aboutSection extends Component{
 												</span> 
 											</div>
 											<div className="icon-content">
-												<h4 className="ttr-title">Best Professionals</h4>
+												<h4 className="ttr-title">Atendimento Familiar</h4>
 											</div>
 										</div>
 									</div>
@@ -95,12 +95,12 @@ class aboutSection extends Component{
 												</span> 
 											</div>
 											<div className="icon-content">
-												<h4 className="ttr-title">Medical Treatment</h4>
+												<h4 className="ttr-title">Alguma coisa ?</h4>
 											</div>
 										</div>
 									</div>
 								</div>
-								<Link to="/about-us" className="btn btn-primary shadow">Read More</Link>
+								<Link to="/about-us" className="btn btn-primary shadow">Leia mais</Link>
 							</div>
 						</div>
 					</div>

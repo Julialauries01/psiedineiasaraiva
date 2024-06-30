@@ -74,19 +74,9 @@ const Header = () => {
 					linkName: 'about-us'
 				},
 				{
-					id: 'team',
-					displayName: 'Our Team',
-					linkName: 'team'
-				},
-				{
 					id: 'faq',
 					displayName: "FAQ's",
 					linkName: 'faq'
-				},
-				{
-					id: 'booking',
-					displayName: 'Booking',
-					linkName: 'booking'
 				},
 				{
 					id: 'error',
@@ -173,8 +163,8 @@ const Header = () => {
 										<i className="las la-search"></i>
 									</button>
 								</li>
-								<li className="num-bx"><a href="tel:(+01)999888777"><i className="fas fa-phone-alt"></i> (+01) 999 888 777</a></li>
-								<li className="btn-area"><Link to="/contact-us" className="btn btn-primary shadow">CONTACT US <i className="btn-icon-bx fas fa-chevron-right"></i></Link></li>
+								<li className="num-bx"><a href="tel:(+55)992091665"><i className="fas fa-phone-alt"></i> (+55) 16 99209-1665</a></li>
+								<li className="btn-area"><Link to="/contact-us" className="btn btn-primary shadow">CONTATE-ME <i className="btn-icon-bx fas fa-chevron-right"></i></Link></li>
 							</ul>
 						</div>
 						

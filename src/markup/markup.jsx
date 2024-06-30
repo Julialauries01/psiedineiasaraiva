@@ -12,7 +12,6 @@ import Footer from "./layout/footer";
 // All Pages Router
 import Index from './pages/index';
 import AboutUs from './pages/about-us';
-import Team from './pages/team';
 import Services from './pages/services';
 import ServiceDetail from './pages/service-detail';
 import FormLogin from './pages/form-login';
@@ -20,7 +19,7 @@ import FormRegister from './pages/form-register';
 import FormForgetPassword from './pages/form-forget-password';
 import Faq from './pages/faq';
 import ContactUs from './pages/contact-us';
-import Booking from './pages/booking';
+/*import Booking from './pages/booking';*/
 import BlogGrid from './pages/blog-grid';
 import BlogDetails from './pages/blog-details';
 import Error from './pages/error-404';
@@ -38,12 +37,11 @@ class Markup extends Component{
 						<Route element={<ThemeLayout />}>
 							<Route path='/' element={<Index />} />
 							<Route path='/about-us' element={<AboutUs />} />
-							<Route path='/team' element={<Team />} />
 							<Route path='/services' element={<Services />} />
 							<Route path='/service-detail' element={<ServiceDetail />} />
 							<Route path='/faq' element={<Faq />} />
 							<Route path='/contact-us' element={<ContactUs />} />
-							<Route path='/booking' element={<Booking />} />
+						{/*	<Route path='/booking' element={<Booking />} /> */}
 							<Route path='/blog-grid' element={<BlogGrid />} />
 							<Route path='/blog-details' element={<BlogDetails />} />
 							<Route path="*" element={<Error />} />

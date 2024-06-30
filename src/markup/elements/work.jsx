@@ -15,38 +15,38 @@ class aboutSection extends Component{
 				<section className="section-area section-sp5 work-area" style={{backgroundImage: "url("+bg1+")", backgroundRepeat:" no-repeat", backgroundPosition: "center", backgroundSize: "100%"}}>
 					<div className="container-sm">
 						<div className="heading-bx text-center">
-							<h6 className="title-ext text-secondary">Working Process</h6>
-							<h2 className="title">How we works?</h2>
+							<h6 className="title-ext text-secondary">Meu trabalho</h6>
+							<h2 className="title">Com o que eu trabalho ?</h2>
 						</div>
 						<div className="row justify-content-center">
 							<div className="col-lg-4 col-sm-6 mb-30">
 								<div className="work-bx">
 									<div className="work-num-bx">01</div>
 									<div className="work-content">
-										<h5 className="title text-secondary mb-10">Make Appointmnet</h5>
-										<p>It is a long established fact that a reader will be distracted by the readable content of.</p>
+										<h5 className="title text-secondary mb-10">Crianças</h5>
+										<p>Atendo crianças em um ambiente adaptado especialmente para elas</p>
 									</div>
-									<Link to="/booking" className="btn btn-primary light">View More <i className="btn-icon-bx fas fa-chevron-right"></i></Link>
+									<Link to="/booking" className="btn btn-primary light">Ver mais <i className="btn-icon-bx fas fa-chevron-right"></i></Link>
 								</div>
 							</div>
 							<div className="col-lg-4 col-sm-6 mb-30">
 								<div className="work-bx active">
 									<div className="work-num-bx">02</div>
 									<div className="work-content">
-										<h5 className="title text-secondary mb-10">Take Treatment</h5>
-										<p>It is a long established fact that a reader will be distracted by the readable content of.</p>
+										<h5 className="title text-secondary mb-10">Adolescentes</h5>
+										<p>Ajudo adolescentes a explorar seus desafios e descobrir novas habilidades para uma vida equilibrada e satisfatória</p>
 									</div>
-									<Link to="/services" className="btn btn-primary light">View More <i className="btn-icon-bx fas fa-chevron-right"></i></Link>
+									<Link to="/services" className="btn btn-primary light">Ver mais <i className="btn-icon-bx fas fa-chevron-right"></i></Link>
 								</div>
 							</div>
 							<div className="col-lg-4 col-sm-6 mb-30">
 								<div className="work-bx">
 									<div className="work-num-bx">03</div>
 									<div className="work-content">
-										<h5 className="title text-secondary mb-10">Registration</h5>
-										<p>It is a long established fact that a reader will be distracted by the readable content of.</p>
+										<h5 className="title text-secondary mb-10">Adultos</h5>
+										<p>Juntos, poderemos trabalhar as diversas demandas e obstáculos da vida adulta.</p>
 									</div>
-									<Link to="/contact-us" className="btn btn-primary light">View More <i className="btn-icon-bx fas fa-chevron-right"></i></Link>
+									<Link to="/contact-us" className="btn btn-primary light">Ver mais <i className="btn-icon-bx fas fa-chevron-right"></i></Link>
 								</div>
 							</div>
 						</div>
