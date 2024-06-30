@@ -34,8 +34,8 @@ class testimonialSection extends Component{
 				<section className="section-area section-sp3 testimonial-wraper">
 					<div className="container">
 						<div className="heading-bx text-center">
-							<h6 className="title-ext text-secondary">Testimonial</h6>
-							<h2 className="title m-b0">See What Are The Patients <br/>Saying About us</h2>
+							<h6 className="title-ext text-secondary">Depoimentos</h6>
+							<h2 className="title m-b0">Veja o que meus pacientes <br/>dizem sobre mim</h2>
 						</div>
 						<div className="row align-items-center">
 							<div className="col-lg-6 text-center">

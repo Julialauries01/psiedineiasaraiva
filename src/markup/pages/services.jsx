@@ -56,9 +56,9 @@ class Services extends Component{
 											</span> 
 										</div>
 										<div className="icon-content">
-											<h3 className="ttr-title">Diagnostics</h3>
+											<h3 className="ttr-title">Autismo</h3>
 											<p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-											<Link to="/service-detail" className="btn btn-primary light">View More</Link>
+											<Link to="/service-detail" className="btn btn-primary light">Ver Mais</Link>
 										</div>
 									</div>
 								</div>
@@ -76,9 +76,9 @@ class Services extends Component{
 											</span> 
 										</div>
 										<div className="icon-content">
-											<h3 className="ttr-title">Treatment</h3>
+											<h3 className="ttr-title">TDAH</h3>
 											<p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-											<Link to="/service-detail" className="btn btn-primary light">View More</Link>
+											<Link to="/service-detail" className="btn btn-primary light">Ver Mais</Link>
 										</div>
 									</div>
 								</div>
@@ -96,9 +96,9 @@ class Services extends Component{
 											</span> 
 										</div>
 										<div className="icon-content">
-											<h3 className="ttr-title">Surgery</h3>
+											<h3 className="ttr-title">Luto</h3>
 											<p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-											<Link to="/service-detail" className="btn btn-primary light">View More</Link>
+											<Link to="/service-detail" className="btn btn-primary light">Ver Mais</Link>
 										</div>
 									</div>
 								</div>
@@ -116,9 +116,9 @@ class Services extends Component{
 											</span> 
 										</div>
 										<div className="icon-content">
-											<h3 className="ttr-title">Emergency</h3>
+											<h3 className="ttr-title">Ansiedade</h3>
 											<p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-											<Link to="/service-detail" className="btn btn-primary light">View More</Link>
+											<Link to="/service-detail" className="btn btn-primary light">Ver Mais</Link>
 										</div>
 									</div>
 								</div>
@@ -133,9 +133,9 @@ class Services extends Component{
 											</span> 
 										</div>
 										<div className="icon-content">
-											<h3 className="ttr-title">Vaccine</h3>
+											<h3 className="ttr-title">TAG</h3>
 											<p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-											<Link to="/service-detail" className="btn btn-primary light">View More</Link>
+											<Link to="/service-detail" className="btn btn-primary light">Ver Mais</Link>
 										</div>
 									</div>
 								</div>
@@ -151,9 +151,9 @@ class Services extends Component{
 											</span> 
 										</div>
 										<div className="icon-content">
-											<h3 className="ttr-title">Qualified Doctors</h3>
+											<h3 className="ttr-title">DEPRESSÃO</h3>
 											<p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-											<Link to="/service-detail" className="btn btn-primary light">View More</Link>
+											<Link to="/service-detail" className="btn btn-primary light">Ver Mais</Link>
 										</div>
 									</div>
 								</div>

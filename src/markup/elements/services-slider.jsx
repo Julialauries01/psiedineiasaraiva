@@ -40,11 +40,11 @@ class ServicesSliderSection extends Component{
 					<div className="row align-items-center">
 						<div className="col-xl-4 col-lg-7 mb-30">	
 							<div className="heading-bx">
-								<h6 className="title-ext text-secondary">Services</h6>
-								<h2 className="title">We Cover A Big Variety Of Medical Services</h2>
-								<p>We provide the special tips and advice’s of heath care treatment and high level of best.</p>
-							</div>
-							<Link to="/services" className="btn btn-secondary btn-lg shadow">All Services</Link>
+								<h6 className="title-ext text-secondary">Serviços</h6>
+								<h2 className="title">Atendimento presencial e online</h2>
+								<p>As principais demandas tratadas na clínica</p>
+								</div>
+							<Link to="/services" className="btn btn-secondary btn-lg shadow">Todos os serviços</Link>
 						</div>
 						<div className="col-xl-8 mb-15">	
 							<Slider {...settings} className="service-slide slick-arrow-none">
@@ -62,9 +62,9 @@ class ServicesSliderSection extends Component{
 											</span> 
 										</div>
 										<div className="icon-content">
-											<h3 className="ttr-title">Diagnostics</h3>
+											<h3 className="ttr-title">Autismo</h3>
 											<p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-											<Link to="/service-detail" className="btn btn-primary light">View More</Link>
+											<Link to="/service-detail" className="btn btn-primary light">Ver mais</Link>
 										</div>
 									</div>
 								</div>
@@ -82,9 +82,9 @@ class ServicesSliderSection extends Component{
 											</span> 
 										</div>
 										<div className="icon-content">
-											<h3 className="ttr-title">Treatment</h3>
+											<h3 className="ttr-title">TDAH</h3>
 											<p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-											<Link to="/service-detail" className="btn btn-primary light">View More</Link>
+											<Link to="/service-detail" className="btn btn-primary light">Ver mais</Link>
 										</div>
 									</div>
 								</div>
@@ -102,9 +102,9 @@ class ServicesSliderSection extends Component{
 											</span> 
 										</div>
 										<div className="icon-content">
-											<h3 className="ttr-title">Surgery</h3>
+											<h3 className="ttr-title">Luto</h3>
 											<p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-											<Link to="/service-detail" className="btn btn-primary light">View More</Link>
+											<Link to="/service-detail" className="btn btn-primary light">Ver mais</Link>
 										</div>
 									</div>
 								</div>
@@ -119,9 +119,9 @@ class ServicesSliderSection extends Component{
 											</span> 
 										</div>
 										<div className="icon-content">
-											<h3 className="ttr-title">Vaccine</h3>
+											<h3 className="ttr-title">Ansiedade</h3>
 											<p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-											<Link to="/service-detail" className="btn btn-primary light">View More</Link>
+											<Link to="/service-detail" className="btn btn-primary light">Ver mais</Link>
 										</div>
 									</div>
 								</div>
@@ -139,9 +139,9 @@ class ServicesSliderSection extends Component{
 											</span> 
 										</div>
 										<div className="icon-content">
-											<h3 className="ttr-title">Emergency</h3>
+											<h3 className="ttr-title">TAG</h3>
 											<p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-											<Link to="/service-detail" className="btn btn-primary light">View More</Link>
+											<Link to="/service-detail" className="btn btn-primary light">Ver mais</Link>
 										</div>
 									</div>
 								</div>
@@ -159,4 +159,4 @@ class ServicesSliderSection extends Component{
 	}
 }
 
-export default ServicesSliderSection;
+export default ServicesSliderSection; 

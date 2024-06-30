@@ -63,11 +63,11 @@ const Header = () => {
 			linkName: '#',
 		},
 		{
-			id: 'pages',
-			name: 'Pages',
-			linkName: '#',
+			id: 'aboutus',
+			name: 'Sobre mim',
+			linkName: 'about-us',
 			
-			subItems: [
+		/*	subItems: [
 				{
 					id: 'aboutus',
 					displayName: 'About Us',
@@ -88,7 +88,7 @@ const Header = () => {
 					displayName: 'Login / Register',
 					linkName: 'form-login'
 				},
-			]
+			] */
 		},
 		{
 			id: 'services',
@@ -98,7 +98,7 @@ const Header = () => {
 			subItems: [
 				{
 					id: 'services',
-					displayName: 'Service',
+					displayName: 'Serviços',
 					linkName: 'services'
 				},
 				{
@@ -126,11 +126,11 @@ const Header = () => {
 				},
 			]
 		},
-		{
+/*		{
 			id: 'contactUs',
 			name: 'Contact Us',
 			linkName: 'contact-us'
-		}
+		} */
 	];
 	
 	return(
@@ -163,7 +163,7 @@ const Header = () => {
 										<i className="las la-search"></i>
 									</button>
 								</li>
-								<li className="num-bx"><a href="tel:(+55)992091665"><i className="fas fa-phone-alt"></i> (+55) 16 99209-1665</a></li>
+								<li className="num-bx"><a href="https://wa.me/5516992091665"><i className="fas fa-phone-alt"></i> (+55) 16 99209-1665</a></li>
 								<li className="btn-area"><Link to="/contact-us" className="btn btn-primary shadow">CONTATE-ME <i className="btn-icon-bx fas fa-chevron-right"></i></Link></li>
 							</ul>
 						</div>
