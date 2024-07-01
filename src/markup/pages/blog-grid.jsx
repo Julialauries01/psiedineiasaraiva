@@ -19,7 +19,7 @@ const blogPost = [
 		authorPic: testPic1,
 		title: "A Importância do acompanhamento psicológico nos casos de Autismo",		
 		author: "Edineia Saraiva",
-		date: "28 Junho 2023",
+		date: "28 Junho 2024",
 		content: "Conteúdo do blog sobre a importância do acompanhamento psicológico nos casos de Autismo.", // Adicione o conteúdo aqui
 		content1: "Conteúdo do blog sobre a importância do acompanhamento psicológico nos casos de Autismo.", // Adicione o conteúdo aqui
 		content2: "Conteúdo do blog sobre a importância do acompanhamento psicológico nos casos de Autismo.", // Adicione o conteúdo aqui
@@ -32,7 +32,7 @@ const blogPost = [
 		authorPic: testPic1,
 		title: "	A Importância do acompanhamento psicológico no casamento",		
 		author: "Edineia Saraiva",
-		date: "20 July 2021",
+		date: "20 Junho 2024",
 		content: "Conteúdo do blog sobre a importância do acompanhamento psicológico nos casos de Autismo.", // Adicione o conteúdo aqui
 		content1: "Conteúdo do blog sobre a importância do acompanhamento psicológico nos casos de Autismo.", // Adicione o conteúdo aqui
 		content2: "Conteúdo do blog sobre a importância do acompanhamento psicológico nos casos de Autismo.", // Adicione o conteúdo aqui

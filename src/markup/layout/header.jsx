@@ -121,7 +121,7 @@ const Header = () => {
 				},
 				{
 					id: 'blogDetails',
-					displayName: 'Blog Details',
+					displayName: 'Detalhes do Blog',
 					linkName: 'blog-details'
 				},
 			]
