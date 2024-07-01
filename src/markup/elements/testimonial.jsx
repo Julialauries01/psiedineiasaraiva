@@ -4,7 +4,7 @@ import Slider from "react-slick";
 
 // Import Images
 import testShape from "../../images/testimonials/shape.png"
-import testPic1 from "../../images/testimonials/pic1.jpg"
+/*import testPic1 from "../../images/testimonials/pic1.jpg" */
 import testPic2 from "../../images/testimonials/pic2.jpg"
 import testPic3 from "../../images/testimonials/pic3.jpg"
 import testPic4 from "../../images/testimonials/pic4.jpg"
@@ -42,7 +42,7 @@ class testimonialSection extends Component{
 								<div className="thumb-wraper">
 									<img className="bg-img" src={testShape} alt=""/>
 									<ul>
-										<li data-member="1"><Link to="#"><img src={testPic1} alt=""/></Link></li>
+										<li data-member="1"><Link to="#"><img src={testPic2} alt=""/></Link></li>
 										<li data-member="2"><Link to="#"><img src={testPic2} alt=""/></Link></li>
 										<li data-member="3"><Link to="#"><img src={testPic3} alt=""/></Link></li>
 										<li data-member="4"><Link to="#"><img src={testPic4} alt=""/></Link></li>

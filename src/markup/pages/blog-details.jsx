@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+
 
 // Elements
 import AuthorProfile from "../elements/author-profile";
-import CommentList from "../elements/comment-list";
+/*import CommentList from "../elements/comment-list"; */
 import CommentRespond from "../elements/comment-respond";
 import WidgetTag from "../elements/widget-tag";
 import WidgetSearch from "../elements/widget-search";
-import WidgetGallery from "../elements/widget-gallery";
+/*import WidgetGallery from "../elements/widget-gallery"; */
 import WidgetRecentPosts from "../elements/widget-recent-posts";
 
 // Import Images
@@ -15,20 +16,59 @@ import bnrImg1 from "../../images/banner/img1.jpg";
 import waveBlue from "../../images/shap/wave-blue.png";
 import circleDots from "../../images/shap/circle-dots.png";
 import plusBlue from "../../images/shap/plus-blue.png";
-import blogDefaultPic1 from "../../images/blog/default/pic1.jpg";
-import testPic3 from "../../images/testimonials/pic3.jpg";
-import galleryPic2 from "../../images/gallery/pic2.jpg";
-import galleryPic5 from "../../images/gallery/pic5.jpg";
+import blogDefaultPic1 from "../../images/blog/default/pic2.jpg";
+import blogDefaultPic4 from "../../images/blog/default/pic4.jpg";
+import image3 from "../../images/gallery/pic3.jpg";
+import image4 from "../../images/gallery/pic4.jpg";
+import testPic1 from "../../images/testimonials/pic1.jpg";
+import image1 from "../../images/gallery/pic1.jpg";
+import image2 from "../../images/gallery/pic2.jpg";
 
 
-class BlogDetails extends Component{
-	
-	render(){
+const blogPost = [
+	{ 
+		id: 1,
+		thumb: blogDefaultPic1,
+		authorPic: testPic1,
+		title: "A Importância do acompanhamento psicológico nos casos de Autismo",		
+		author: "Edineia Saraiva",
+		date: "28 Junho 2023",
+		img1: image1,
+		img2: image2,
+		content: "Conteúdo do blog sobre a importância do acompanhamento psicológico nos casos de Autismo.", // Adicione o conteúdo aqui
+		content1: "Conteúdo do blog sobre a importância do acompanhamento psicológico nos casos de Autismo.", // Adicione o conteúdo aqui
+		content2: "Conteúdo do blog sobre a importância do acompanhamento psicológico nos casos de Autismo.", // Adicione o conteúdo aqui
+		content3: "Conteúdo do blog sobre a importância do acompanhamento psicológico nos casos de Autismo.", // Adicione o conteúdo aqui
+		content4: "Conteúdo do blog sobre a importância do acompanhamento psicológico nos casos de Autismo.", // Adicione o conteúdo aqui
+
+	}, 
+	{ 
+		id: 2,
+		thumb: blogDefaultPic4,
+		authorPic: testPic1,
+		title: "In this hospital there are special surgeon",		
+		author: "Edineia Saraiva",
+		date: "20 July 2021",
+		img1: image3,
+		img2: image4,
+		content: "Conteúdo do blog sobre a importância do acompanhamento psicológico nos casos de Autismo.", // Adicione o conteúdo aqui
+		content1: "Conteúdo do blog sobre a importância do acompanhamento psicológico nos casos de Autismo.", // Adicione o conteúdo aqui
+		content2: "Conteúdo do blog sobre a importância do acompanhamento psicológico nos casos de Autismo.", // Adicione o conteúdo aqui
+		content3: "Conteúdo do blog sobre a importância do acompanhamento psicológico nos casos de Autismo.", // Adicione o conteúdo aqui
+		content4: "Conteúdo do blog sobre a importância do acompanhamento psicológico nos casos de Autismo.", // Adicione o conteúdo aqui
+	},
+];
+
+const BlogDetails = () => {
+	const { id } = useParams();
+	const post = blogPost.find(post => post.id === parseInt(id));
+
+	if (!post) {
+		return <div>Post não encontrado</div>;
+	}
 		return (
 			<>
-				
 				<div className="page-content bg-white">
-					
 					<div className="banner-wraper">
 						<div className="page-banner" style={{backgroundImage: "url("+bnrImg1+")"}}>
 							<div className="container">
@@ -53,44 +93,44 @@ class BlogDetails extends Component{
 							<div className="row">
 								<div className="col-md-12 col-lg-7 col-xl-8 mb-30 mb-md-50">
 									<div className="blog-card blog-single">
-										<div className="post-media">
-											<img src={blogDefaultPic1} alt=""/>
+									<div className="post-media">
+											<img src={post.thumb} alt=""/>
 										</div>
 										<div className="info-bx">
 											<ul className="post-meta">
-												<li className="author"><Link to="/blog-details"><img src={testPic3} alt=""/> Sonar Moyna</Link></li>
-												<li className="date"><i className="far fa-calendar-alt"></i> 19 July 2021</li>
+												<li className="author"><Link to="/blog-details"><img src={testPic1} alt=""/>{post.author}</Link></li>
+												<li className="date"><i className="far fa-calendar-alt"></i> {post.date}</li>
 											</ul>
 											<div className="ttr-post-title">
-												<h2 className="post-title">Precious Tips To Help You Get Better.</h2>
+												<h2 className="post-title">{post.title}</h2>
 											</div>
 											<div className="ttr-post-text">
-												<p>You just need to enter the keyword and select the keyword type to generate a list of 6 title ideas and suggestions. If you’re not satisfied with the results, you can always hit the refresh button to generate a new list of unique titles.</p>
+												<p>{post.content}</p>
 												<blockquote className="wp-block-quote">
-													<p>Once you’ve gotten all the titles and have chosen the best one, the next thing you need to do is to craft a magnetic content. Great content marketers excel at creating content.</p>
+													<p>{post.content1}</p>
 												</blockquote>
-												<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+												<p>{post.content2}</p>
 												<ul className="wp-block-gallery columns-6 is-cropped">
-													<li className="blocks-gallery-item"><img alt="" src={galleryPic2}/></li>
-													<li className="blocks-gallery-item"><img alt="" src={galleryPic5}/></li>
+													<li className="blocks-gallery-item"><img alt="" src={post.img1}/></li>
+													<li className="blocks-gallery-item "><img alt="" src={post.img2}/></li>
 												</ul>
-												<p>You just need to enter the keyword and select the keyword type to generate a list of 6 title ideas and suggestions. If you’re not satisfied with the results, you can always hit the refresh button to generate a new list of unique titles.</p>
-												<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+												<p>{post.content2}</p>
+												<p>{post.content3}</p>
 											</div>
 											<div className="ttr-post-footer">
 												<div className="post-tags">
 													<strong>Tags:</strong>
-													<Link to="#">Health</Link> 
-													<Link to="#">Growth</Link> 
-													<Link to="#">Life</Link> 
+													<Link to="#">Autismo</Link> 
+													<Link to="#">Infantil</Link> 
+													<Link to="#">Terapia</Link> 
 												</div>
 												<div className="share-post ml-auto">
 													<ul className="social-media mb-0">
-														<li><strong>Share:</strong></li>
-														<li><a rel="noreferrer" target="_blank" href="https://www.facebook.com/"><i className="fab fa-facebook-f"></i></a></li>
-														<li><a rel="noreferrer" target="_blank" href="https://www.instagram.com/"><i className="fab fa-instagram"></i></a></li>
-														<li><a rel="noreferrer" target="_blank" href="https://www.linkedin.com/"><i className="fab fa-linkedin-in"></i></a></li>
-														<li><a rel="noreferrer" target="_blank" href="https://twitter.com/"><i className="fab fa-twitter"></i></a></li>
+														<li><strong>Siga:</strong></li>
+													{/*	<li><a rel="noreferrer" target="_blank" href="https://www.facebook.com/"><i className="fab fa-facebook-f"></i></a></li> */}
+														<li><a rel="noreferrer" target="_blank" href="https://www.instagram.com/psi.edineiasaraiva/"><i className="fab fa-instagram"></i></a></li>
+														{/*<li><a rel="noreferrer" target="_blank" href="https://www.linkedin.com/"><i className="fab fa-linkedin-in"></i></a></li>*/}
+													{/*	<li><a rel="noreferrer" target="_blank" href="https://twitter.com/"><i className="fab fa-twitter"></i></a></li>*/}
 													</ul>
 												</div>
 											</div>
@@ -98,20 +138,23 @@ class BlogDetails extends Component{
 									</div>
 									
 									<AuthorProfile />
-									
+								{/*	
 									<div className="clear" id="comment-list">
 										<div className="comments-area" id="comments">
 											<h4 className="widget-title">8 Comments</h4>
 											
-											<div className="clearfix">
+											<div className="clearfix"> 
+
 												
-												<CommentList />
+											<CommentList /> 
 												
-												<CommentRespond />
+											<CommentRespond />
 												
 											</div>
+
 										</div>
 									</div>
+									*/}
 								</div>
 								<div className="col-md-12 col-lg-5 col-xl-4 mb-30">
 									<aside className="side-bar sticky-top aside-bx">
@@ -120,7 +163,7 @@ class BlogDetails extends Component{
 										
 										<WidgetRecentPosts />
 										
-										<WidgetGallery />
+									{/*	<WidgetGallery /> */}
 										
 										<WidgetTag />
 										
@@ -135,6 +178,6 @@ class BlogDetails extends Component{
 			</>
 		);
 	}
-}
+
 
 export default BlogDetails;

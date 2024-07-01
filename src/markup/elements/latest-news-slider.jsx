@@ -71,7 +71,7 @@ const NewsItem = ({ item }) => {
 						<li className="date"><i className="far fa-calendar-alt"></i>{item.date}</li>
 					</ul>
 					<h5 className="post-title"><Link to="/blog-details">{item.title}</Link></h5>		
-					<Link to="/blog-details" className="btn btn-outline-primary btn-sm">Read More <i className="btn-icon-bx fas fa-chevron-right"></i></Link>
+					<Link to="/blog-details" className="btn btn-outline-primary btn-sm">Leia mais <i className="btn-icon-bx fas fa-chevron-right"></i></Link>
 				</div>
 			</div>	
 		</div>

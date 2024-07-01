@@ -8,15 +8,13 @@ class widgetTag extends Component{
 				<div className="widget widget_tag_cloud">
 					<h4 className="widget-title">Tags</h4>
 					<div className="tagcloud"> 
-						<Link to="#">Improvement</Link> 
-						<Link to="#">Health</Link> 
-						<Link to="#">Life</Link> 
-						<Link to="#">Covid</Link> 
-						<Link to="#">Healthy</Link> 
-						<Link to="#">Growth</Link>
-						<Link to="#">Education</Link> 
-						<Link to="#">Manage</Link> 
-						<Link to="#">General</Link>
+						<Link to="#">Psicóloga</Link> 
+						<Link to="#">Terapia</Link> 
+						<Link to="#">Ajuda</Link> 
+						<Link to="#">Crianças</Link> 
+						<Link to="#">Autismo</Link> 
+						<Link to="#">Atendimento</Link>
+
 					</div>
 				</div>
 				

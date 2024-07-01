@@ -95,7 +95,7 @@ class aboutSection extends Component{
 												</span> 
 											</div>
 											<div className="icon-content">
-												<h4 className="ttr-title">Alguma coisa ?</h4>
+												<h4 className="ttr-title">Atendimento em grupo</h4>
 											</div>
 										</div>
 									</div>

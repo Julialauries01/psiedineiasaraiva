@@ -7,7 +7,7 @@ class widgetSearch extends Component{
 				<div className="widget widget_search">
 					<form className="searchform">
 						<div className="input-group">
-							<input name="text" className="form-control" placeholder="Enter your keywords..." type="text"/>
+							<input name="text" className="form-control" placeholder="Escreva palavras chaves..." type="text"/>
 							<div className="input-group-btn">
 								<button type="submit" className="btn btn-secondary"><i className="fa fa-search"></i></button>
 							</div> 

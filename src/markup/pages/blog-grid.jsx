@@ -1,102 +1,51 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-// Import Images
+// Importação das Imagens
 import bnrImg1 from "../../images/banner/img1.jpg";
 import waveBlue from "../../images/shap/wave-blue.png";
 import circleDots from "../../images/shap/circle-dots.png";
 import plusBlue from "../../images/shap/plus-blue.png";
 import testPic1 from "../../images/testimonials/pic1.jpg";
-import testPic2 from "../../images/testimonials/pic2.jpg";
-import testPic3 from "../../images/testimonials/pic3.jpg";
-import testPic4 from "../../images/testimonials/pic4.jpg";
-import testPic5 from "../../images/testimonials/pic5.jpg";
-import testPic6 from "../../images/testimonials/pic6.jpg";
 import blogGridPic1 from "../../images/blog/grid/pic1.jpg";
-import blogGridPic2 from "../../images/blog/grid/pic2.jpg";
-import blogGridPic3 from "../../images/blog/grid/pic3.jpg";
-import blogGridPic4 from "../../images/blog/grid/pic4.jpg";
-import blogGridPic5 from "../../images/blog/grid/pic5.jpg";
-import blogGridPic6 from "../../images/blog/grid/pic6.jpg";
-import blogGridPic7 from "../../images/blog/grid/pic7.jpg";
-import blogGridPic8 from "../../images/blog/grid/pic8.jpg";
-import blogGridPic9 from "../../images/blog/grid/pic9.jpg";
+import blogDefaultPic4 from "../../images/blog/default/pic4.jpg";
 
-// Blog Content
+
+// Conteúdo do Blog
 const blogPost = [
 	{ 
+		id: 1,
 		thumb: blogGridPic1,
 		authorPic: testPic1,
-		title: "Dental Care for Women is very important",		
-		author: "John deo",
-		date: "21 July 2021",
-	},
+		title: "A Importância do acompanhamento psicológico nos casos de Autismo",		
+		author: "Edineia Saraiva",
+		date: "28 Junho 2023",
+		content: "Conteúdo do blog sobre a importância do acompanhamento psicológico nos casos de Autismo.", // Adicione o conteúdo aqui
+		content1: "Conteúdo do blog sobre a importância do acompanhamento psicológico nos casos de Autismo.", // Adicione o conteúdo aqui
+		content2: "Conteúdo do blog sobre a importância do acompanhamento psicológico nos casos de Autismo.", // Adicione o conteúdo aqui
+		content3: "Conteúdo do blog sobre a importância do acompanhamento psicológico nos casos de Autismo.", // Adicione o conteúdo aqui
+		content4: "Conteúdo do blog sobre a importância do acompanhamento psicológico nos casos de Autismo.", // Adicione o conteúdo aqui
+	}, 
 	{ 
-		thumb: blogGridPic2,
-		authorPic: testPic2,
-		title: "In this hospital there are special surgeon",		
-		author: "Peter Packer",
-		date: "20 July 2021",
-	},
-	{ 
-		thumb: blogGridPic3,
-		authorPic: testPic3,
-		title: "Why Is Skin Surgeon Considered Underrated",		
-		author: "Sonar Moyna",
-		date: "19 July 2021",
-	},
-	{ 
-		thumb: blogGridPic4,
-		authorPic: testPic4,
-		title: "Understand Health Before You Regret",		
-		author: "Kalina",
-		date: "18 July 2021",
-	},
-	{ 
-		thumb: blogGridPic5,
-		authorPic: testPic5,
-		title: "Health Will Be A Thing Of The Past And Here",		
-		author: "Michel",
-		date: "17 July 2021",
-	},
-	{ 
-		thumb: blogGridPic6,
-		authorPic: testPic6,
-		title: "Can you get a diflucan prescription online?",		
-		author: "Peter Packer",
-		date: "16 July 2021",
-	},
-	{ 
-		thumb: blogGridPic7,
+		id: 2,
+		thumb: blogDefaultPic4,
 		authorPic: testPic1,
-		title: "Ten Gigantic Influences Of Health",		
-		author: "Sonar Moyna",
-		date: "15 July 2021",
+		title: "	A Importância do acompanhamento psicológico no casamento",		
+		author: "Edineia Saraiva",
+		date: "20 July 2021",
+		content: "Conteúdo do blog sobre a importância do acompanhamento psicológico nos casos de Autismo.", // Adicione o conteúdo aqui
+		content1: "Conteúdo do blog sobre a importância do acompanhamento psicológico nos casos de Autismo.", // Adicione o conteúdo aqui
+		content2: "Conteúdo do blog sobre a importância do acompanhamento psicológico nos casos de Autismo.", // Adicione o conteúdo aqui
+		content3: "Conteúdo do blog sobre a importância do acompanhamento psicológico nos casos de Autismo.", // Adicione o conteúdo aqui
+		content4: "Conteúdo do blog sobre a importância do acompanhamento psicológico nos casos de Autismo.", // Adicione o conteúdo aqui
 	},
-	{ 
-		thumb: blogGridPic8,
-		authorPic: testPic2,
-		title: "Why Is Skin Surgeon Considered Underrated",		
-		author: "Kalina",
-		date: "14 July 2021",
-	},
-	{ 
-		thumb: blogGridPic9,
-		authorPic: testPic3,
-		title: "Everyone need to go Dentist regularly",		
-		author: "Michel",
-		date: "13 July 2021",
-	},
-]
+];
 
 class BlogGrid extends Component{
-	
 	render(){
 		return (
 			<>
-				
 				<div className="page-content bg-white">
-					
 					<div className="banner-wraper">
 						<div className="page-banner" style={{backgroundImage: "url("+bnrImg1+")"}}>
 							<div className="container">
@@ -119,19 +68,19 @@ class BlogGrid extends Component{
 					<section className="section-area section-sp1">
 						<div className="container">
 							<div className="row">
-								{blogPost.map((blogPost, index) =>(
+								{blogPost.map((post, index) => (
 									<div key={index} className="col-xl-4 col-md-6">
 										<div className="blog-card mb-30">
 											<div className="post-media">
-												<Link to="/blog-details"><img src={blogPost.thumb} alt=""/></Link>
+												<Link to={`/blog-details/${post.id}`}><img src={post.thumb} alt=""/></Link>
 											</div>
 											<div className="post-info">
 												<ul className="post-meta">
-													<li className="author"><Link to="/blog-details"><img src={blogPost.authorPic} alt=""/> {blogPost.author}</Link></li>
-													<li className="date"><i className="far fa-calendar-alt"></i> {blogPost.date}</li>
+													<li className="author"><Link to={`/blog-details/${post.id}`}><img src={post.authorPic} alt=""/> {post.author}</Link></li>
+													<li className="date"><i className="far fa-calendar-alt"></i> {post.date}</li>
 												</ul>
-												<h4 className="post-title"><Link to="/blog-details">{blogPost.title}</Link></h4>		
-												<Link to="/blog-details" className="btn btn-outline-primary btn-sm">Read More <i className="btn-icon-bx fas fa-chevron-right"></i></Link>		
+												<h4 className="post-title"><Link to={`/blog-details/${post.id}`}>{post.title}</Link></h4>		
+												<Link to={`/blog-details/${post.id}`} className="btn btn-outline-primary btn-sm">Leia mais <i className="btn-icon-bx fas fa-chevron-right"></i></Link>		
 											</div>
 										</div>							
 									</div>
@@ -152,9 +101,7 @@ class BlogGrid extends Component{
 							</div>
 						</div>
 					</section>
-					
 				</div>
-			
 			</>
 		);
 	}

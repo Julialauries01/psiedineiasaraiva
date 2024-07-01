@@ -18,7 +18,7 @@ class appointmentForm extends Component{
 						</div>
 						<div className="form-group">
 							<select className="form-select form-control">
-								<option defaultValue>Edineia</option>
+								<option defaultValue>Psicóloga Edineia</option>
 							</select>
 						</div>
 						<div className="form-group">
